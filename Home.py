@@ -4,11 +4,11 @@ import os
 import subprocess
 
 
-image_path = "images\picture.jpg"  
+image_path = "images/picture.jpg"  
 
 
-# with open(image_path, "rb") as image_file:
-#     encoded_string = base64.b64encode(image_file.read()).decode()
+with open(image_path, "rb") as image_file:
+    encoded_string = base64.b64encode(image_file.read()).decode()
 
 # Page configuration
 st.set_page_config(page_title="BusinessBuddy - Get Started", layout="centered")
