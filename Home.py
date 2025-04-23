@@ -4,7 +4,7 @@ import os
 import subprocess
 
 
-image_path = "images\pi c2.jpg"  
+image_path = "images\picture.jpg"  
 
 
 with open(image_path, "rb") as image_file:
