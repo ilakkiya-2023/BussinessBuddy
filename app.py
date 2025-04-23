@@ -10,7 +10,7 @@ GEMINI_API_KEY = "AIzaSyCBSf-PIDxC9fTeDxP0VIkcyP3yqlVuQYk"
 NEWS_API_KEY = "8963e443014744168deb7f943bc884bf"
 serpapi_key = "4f25985c97c17217fac2f9c70fa5d45999a23b8838c85dd604320e97e2ac058a"
 
-st.set_page_config(page_title="BusinessBuddy", layout="wide")
+# st.set_page_config(page_title="BusinessBuddy", layout="wide")
 
 
 st.markdown("""
