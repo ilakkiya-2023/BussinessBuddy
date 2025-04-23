@@ -63,9 +63,18 @@ st.markdown("""<div class="content">,
 """, unsafe_allow_html=True)
 
 # Button
+# if st.button("🚀 Get Started"):
+#     subprocess.Popen(["streamlit", "run", "app.py"])
+#     st.success("Launching BusinessBuddy...")
+#     st.stop()
+
+# st.markdown('</div>', unsafe_allow_html=True)
 if st.button("🚀 Get Started"):
-    subprocess.Popen(["streamlit", "run", "app.py"])
-    st.success("Launching BusinessBuddy...")
-    st.stop()
+    st.session_state.page = "app"
 
 st.markdown('</div>', unsafe_allow_html=True)
+
+# Navigate to app.py content if button clicked
+if "page" in st.session_state and st.session_state.page == "app":
+    from app import run_app
+    run_app()
